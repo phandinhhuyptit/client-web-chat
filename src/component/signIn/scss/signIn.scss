@@ -4,10 +4,6 @@
   align-items: $align-items;
 }
 
-
-
-
-
 #login {
   @include centerFlex(flex, center, center);
 
@@ -59,10 +55,8 @@
         .controls > #btn-login {
 
                 margin-right: 5px;
-
         }        
-      }
-      
+      }      
       .panel-heading {
         color: #31708f;
         background-color: #d9edf7;
