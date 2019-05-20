@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as authAction  from './Actions/auth';
-import SignIn from './component/signIn/signIn';
-import SignUp from './component/signUp/signUp';
+import { BrowserRouter as Router} from "react-router-dom";
+import  DirectionalURL   from './Router/DirectionalURL';
 
 class App extends Component {
 
   componentDidMount = () => {
     this.props.onHandleGettUsers();
   }
-  render() {
+  render() {    
+
     return (
-      <div>
-        {/* <SignIn></SignIn> */}
-        <SignUp/>
-      </div>
+      <Router>
+          <DirectionalURL/>        
+      </Router>
     );
   }
 }
