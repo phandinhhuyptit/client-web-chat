@@ -19,6 +19,18 @@ body {
             width: 660px;
             margin : auto;
             #signup-form{
+
+
+                .errorRegister {
+                    height: 50px;
+                    background-color: #ffa5a5;
+                    color: #ec0000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 4px;
+                }
+
                 .form-title{
     
                     line-height: 1.66;

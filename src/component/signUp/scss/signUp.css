@@ -16,6 +16,22 @@ body .container .signup-content {
   margin: auto;
 }
 
+body .container .signup-content #signup-form .errorRegister {
+  height: 50px;
+  background-color: #ffa5a5;
+  color: #ec0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
 body .container .signup-content #signup-form .form-title {
   line-height: 1.66;
   margin: 0;

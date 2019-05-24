@@ -5,9 +5,7 @@ import { combineReducers} from 'redux';
 
 const rootReducer = combineReducers({
     auth : authReducer,
-    error : errorReducer 
-
+    error : errorReducer
+    
 })
-
-
 export default rootReducer;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as authAction  from './Actions/auth';
+import * as authAction  from './Actions/authActions';
 import { BrowserRouter as Router} from "react-router-dom";
 import  DirectionalURL   from './Router/DirectionalURL';
 
@@ -8,6 +8,8 @@ class App extends Component {
 
   componentDidMount = () => {
     this.props.onHandleGettUsers();
+    
+    this.props.onloadUser();
   }
   render() {    
 
@@ -27,7 +29,12 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onHandleGettUsers: () => {
-      dispatch(authAction.handleGettUsers())
+      dispatch(authAction.handleGettUsers());
+    },
+    onloadUser : () =>{
+
+      dispatch(authAction.loadUser());
+
     }
   }
 }
